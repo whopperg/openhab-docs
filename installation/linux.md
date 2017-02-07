@@ -382,7 +382,7 @@ rm openhab-2.0.0-SNAPSHOT.zip
 
 # restore configuration and userdata
 sudo cp -arv /opt/openhab2-backup-$TIMESTAMP/conf /opt/openhab2/
-sudo cp -arv /opt/openhab2-backup-$TIMESTAMP/userdata /opt/openhab2/
+rsync -av --progress /opt/openhab2-backup-$TIMESTAMP/userdata /opt/openhab2 --exclude /opt/openhab2-backup-$TIMESTAMP/userdata/cache /opt/openhab2-backup-$TIMESTAMP/userdata/tmp /opt/openhab2-backup-$TIMESTAMP/userdata/etc
 
 # fix permissions
 sudo chown -hR openhab:openhab /opt/openhab2
