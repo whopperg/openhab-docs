@@ -351,7 +351,7 @@ When running a manual installation, it is possible to pre-download add-ons or le
 Simply download the kar files (the latest builds can be found [here](https://openhab.ci.cloudbees.com/job/openHAB-Distribution/)) and move them to the `/opt/openhab2/addons` folder.
 
 
-#### Upgrade, Backup and Restore
+#### Upgrade, Backup and Restore a manual installation
 
 To stay up to date with new releases, you should do regular upgrades of your manual installation.
 This is especially important if you are working with the latest snapshot as changes and fixes are incorporated [constantly](https://oss.jfrog.org/webapp/#/builds/openHAB-Distribution).
@@ -391,7 +391,7 @@ sudo chown -hR openhab:openhab /opt/openhab2
 sudo systemctl start openhab2.service
 ```
 
-#### Uninstall
+#### Uninstall a manual installation
 
 To uninstall (or more precisely remove) openHAB 2 after being manually set up, take a backup if needed and then simply stop and deactivate the openHAB service and get rid of all files:
 
