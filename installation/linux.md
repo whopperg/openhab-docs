@@ -262,9 +262,9 @@ As openHAB 2 is still in an evolving state, the snapshot may be the **preferred 
 
   ```shell
   cd /tmp
-  wget https://openhab.ci.cloudbees.com/job/openHAB-Distribution/lastSuccessfulBuild/artifact/distributions/openhab/target/openhab-2.0.0-SNAPSHOT.zip
-  sudo unzip openhab-2.0.0-SNAPSHOT.zip -d /opt/openhab2
-  rm openhab-2.0.0-SNAPSHOT.zip
+  wget https://openhab.ci.cloudbees.com/job/openHAB-Distribution/lastSuccessfulBuild/artifact/distributions/openhab/target/openhab-2.1.0-SNAPSHOT.zip
+  sudo unzip openhab-2.1.0-SNAPSHOT.zip -d /opt/openhab2
+  rm openhab-2.1.0-SNAPSHOT.zip
   ```
 
 The extracted openHAB files should belong to the earlier created openhab user.
@@ -376,9 +376,9 @@ sudo mv /opt/openhab2 /opt/openhab2-backup-$TIMESTAMP
 
 # download new version (please replace URL)
 cd /tmp
-wget https://openhab.ci.cloudbees.com/job/openHAB-Distribution/lastSuccessfulBuild/artifact/distributions/openhab/target/openhab-2.0.0-SNAPSHOT.zip
-sudo unzip openhab-2.0.0-SNAPSHOT.zip -d /opt/openhab2
-rm openhab-2.0.0-SNAPSHOT.zip
+wget https://openhab.ci.cloudbees.com/job/openHAB-Distribution/lastSuccessfulBuild/artifact/distributions/openhab/target/openhab-2.1.0-SNAPSHOT.zip
+sudo unzip openhab-2.1.0-SNAPSHOT.zip -d /opt/openhab2
+rm openhab-2.1.0-SNAPSHOT.zip
 
 # restore configuration and userdata
 sudo cp -arv /opt/openhab2-backup-$TIMESTAMP/conf /opt/openhab2/
